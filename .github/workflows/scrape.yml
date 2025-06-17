@@ -2,8 +2,7 @@ name: Scrape and Generate Wordclouds
 
 on:
   workflow_dispatch:  # Manuell auslösbar über GitHub
-  schedule:
-    - cron: '0 6 * * *'  # Täglich um 6 Uhr UTC
+  
 
 jobs:
   scrape:

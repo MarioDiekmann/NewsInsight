@@ -8,3 +8,4 @@ spacy
 wordcloud
 lxml
 pillow
+lxml[html_clean]
