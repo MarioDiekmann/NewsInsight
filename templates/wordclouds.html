@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Clouds - {{ date }}</title>
+     <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Stimmungsbild der Medien</h1>
+    <h2>Word Clouds for {{ date }}</h2>
+
+    <div class="grid-container">
+        {% for newspaper, wordcloud in wordclouds.items() %}
+            <div class="wordcloud">
+                <img src="{{ wordcloud }}" alt="Wordcloud for {{ newspaper }}">
+                <p>{{ newspaper }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="date-selector">
+        <label for="date-select">Datum: </label>
+        <select id="date-select">
+
+            {% for available_date in dates %}
+                <option value="{{ available_date }}" {% if available_date == date %}selected{% endif %}>
+                    {{ available_date }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <script>
+        document.getElementById('date-select').addEventListener('change', function() {
+            var selectedDate = this.value;
+            if (selectedDate) {
+                window.location.href = '/wordclouds/' + selectedDate;
+            }
+        });
+    </script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const h2Element = document.querySelector("h2");
+
+            function formatDate(dateStr) {
+                const parts = dateStr.split("-");
+                if (parts.length === 3) {
+                    return `${parts[2]}.${parts[1]}.${parts[0]}`;
+                }
+                return dateStr; // Fallback if format is incorrect
+            }
+
+            h2Element.textContent = "Word Clouds for " + formatDate(h2Element.textContent.split("for ")[1]);
+        });
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dateSelect = document.getElementById("date-select");
+
+        // Function to reformat date from "yy-dd-mm" to "dd.mm.yy"
+        function formatDate(dateStr) {
+            const parts = dateStr.split("-");
+            if (parts.length === 3) {
+                return `${parts[2]}.${parts[1]}.${parts[0]}`;
+            }
+            return dateStr; // Return as is if the format is unexpected
+        }
+
+        // Loop through options and update the text
+        for (let option of dateSelect.options) {
+            option.textContent = formatDate(option.value);
+        }
+    });
+</script>
+</body>
+</html>

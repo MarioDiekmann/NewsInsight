@@ -1,0 +1,57 @@
+{
+  "spiegel": [
+    "https://www.spiegel.de/fuermich",
+    "https://www.spiegel.de/kontakt",
+    "https://www.spiegel.de/karriere",
+    "https://www.spiegel.de/international",
+    "https://lotto.spiegel.de",
+    "https://www.spiegel.de/thema/abovorteile",
+    "https://www.spiegel.de/games",
+    "https://gruppe.spiegel.de/spiegel-media",
+    "https://www.spiegel.de/tests",
+    "https://www.spiegel.de/impressum",
+    "https://www.spiegel.de/deinspiegel",
+    "https://www.spiegel.de/backstage",
+    "https://www.spiegel.de/nutzungsbedingungen"
+  ],
+  "bild": [
+    "https://www.bild.de/kreditkarten",
+    "https://www.bild.de//kreditkarten/",
+    "https://www.bild.de/kaufberater",
+    "https://www.bild.de/vergleich",
+    "https://www.bild.de/trading",
+    "https://www.bild.de//trading/",
+    "https://www.bild.de/sonstiges",
+    "https://www.bild.de/games",
+    "https://www.bild.de//bildplus",
+    "https://www.bild.de/kredit",
+    "https://www.bild.de//kredit/",
+    "https://www.bild.de/strompreisvergleich",
+    "https://www.bild.de//suche.bild.html",
+    "https://www.bild.de/corporate-site",
+    "https://www.bild.de//corporate-site",
+    "https://www.bild.de/deals",
+    "https://www.bild.de//deals/",
+    "https://www.bild.de/leasing",
+    "https://www.bild.de/vpn",
+    "https://www.bild.de/dating",
+    "https://www.bild.de/tierversicherung",
+    "https://www.bild.de/gewinnspiele",
+    "https://www.bild.de/corporate",
+    "https://www.bild.de//specials",
+    "https://www.bild.de/tagesgeld",
+    "https://www.bild.de/wettbonus"
+  ],
+  "zeit": [
+    "https://www.zeit.de/beta",
+    "https://www.zeit.de/spiele",
+    "https://www.zeit.de/digital/games",
+    "https://www.zeit.de/administratives",
+    "https://www.zeit.de/hilfe",
+    "https://www.zeit.de/archiv",
+    "https://www.zeit.de/serie/anruf-an-alle"
+  ],
+  "faz": [
+    "https://www.faz.net/aktuell/spiele"
+  ]
+}

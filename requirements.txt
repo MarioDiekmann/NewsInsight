@@ -1,0 +1,10 @@
+Flask
+gunicorn
+requests
+beautifulsoup4
+nltk
+newspaper3k
+spacy
+wordcloud
+lxml
+pillow

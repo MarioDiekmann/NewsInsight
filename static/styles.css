@@ -1,0 +1,113 @@
+/* Reset default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e1e2f, #3a3a5d);
+    color: #ffffff; /* White text for better contrast */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+    font-size: 3vw; /* Scales with viewport width */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+h2 {
+    margin-top: 10px; /* Removes space above h2 if necessary */
+}
+
+/* Grid layout for images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    width: 90%; /* Makes the grid container responsive */
+    max-width: 1200px; /* Max width of grid container */
+    margin-top: 20px;
+}
+
+/* Each wordcloud block */
+.wordcloud {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wordcloud image styles */
+.wordcloud img {
+    width: 100%;
+    height: auto;
+    max-width: 525px; /* Set a max-width to prevent images from growing too large */
+    object-fit: contain; /* Ensure the image scales without distortion */
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.wordcloud img:hover {
+    transform: scale(1.05);
+}
+
+/* Style the newspaper name */
+.wordcloud p {
+    font-size: 1.5rem; /* Relative size for better responsiveness */
+    font-weight: bold;
+    margin-top: 10px;
+    border: white 1px solid;
+    padding: 10px; /* Padding inside the border, so the text doesn't touch the border */
+    margin: 20px 0; /* Adds space around the element, with top and bottom margins */
+    text-transform: uppercase; /* This makes all text uppercase */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wordcloud p:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.date-selector select {
+    background: #222;
+    color: white;
+    border: 2px solid #555;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.date-selector select:hover {
+    border-color: #888;
+    background: #333;
+}
+
+.date-selector select:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile responsiveness (below 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Smaller heading on smaller screens */
+    }
+    .wordcloud p {
+        font-size: 4vw; /* Adjust text size */
+    }
+    .date-selector select {
+        font-size: 4vw; /* Adjust select box size */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    }
+}
