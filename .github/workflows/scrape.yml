@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:  # Manuell auslösbar über GitHub
   schedule:
-    - cron: '15 16 * * *'   # 17:10 MESZ (heute)
+    - cron: '00 06 * * *'
 
 jobs:
   scrape:
