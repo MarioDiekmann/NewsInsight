@@ -1,5 +1,8 @@
 name: Scrape and Generate Wordclouds
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:  # Manuell auslösbar über GitHub
   schedule:
