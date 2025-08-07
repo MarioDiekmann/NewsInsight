@@ -1,7 +1,9 @@
 
 # 📰 Wortwolken deutscher Nachrichtenseiten
 
-🔗 **Live-Demo:** [https://newsinsight-wg3q.onrender.com/](https://nachrichten-wortwolken.onrender.com)  
+🔗 **Live-Demo:** [https://newsinsight-wg3q.onrender.com]
+
+)  
 > *Täglich aktualisierte Wortwolken aus den Startseiten großer deutscher Zeitungen.*
 
 ---
