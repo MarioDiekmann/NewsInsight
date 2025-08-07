@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:  # Manuell auslösbar über GitHub
   schedule:
-    - cron: '00 06 * * *'
+    - cron: '00 06 * * *'  # Täglich um 6:00 Uhr UTC (8:00 Uhr MESZ)
 
 jobs:
   scrape:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          persist-credentials: true  # Wichtig für Push
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -31,8 +31,7 @@ jobs:
           python -m spacy download de_core_news_sm
 
       - name: Run scraper script
-        run: |
-          python main.py  # Passe den Namen an, falls dein Script anders heißt
+        run: python main.py  # Passe den Dateinamen an, falls abweichend
 
       - name: Configure git for commit
         run: |
@@ -47,4 +46,7 @@ jobs:
             git push
           else
             echo "No changes to commit"
-          fi
+
+      - name: Trigger Render Deploy Hook
+        run: |
+          curl -X POST https://api.render.com/deploy/srv-d19if37gi27c73ct83fg?key=FJCiFHjK9kc
