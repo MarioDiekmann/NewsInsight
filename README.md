@@ -1,7 +1,7 @@
 
 # 📰 Wortwolken deutscher Nachrichtenseiten
 
-🔗 **Live-Demo:** [https://nachrichten-wortwolken.onrender.com](https://nachrichten-wortwolken.onrender.com)  
+🔗 **Live-Demo:** [https://newsinsight-wg3q.onrender.com/](https://nachrichten-wortwolken.onrender.com)  
 > *Täglich aktualisierte Wortwolken aus den Startseiten großer deutscher Zeitungen.*
 
 ---
@@ -128,8 +128,8 @@ MIT – freie Nutzung und Weiterverwendung ausdrücklich erlaubt und erwünscht!
 
 ## 📬 Kontakt
 
-Bei Fragen, Feedback oder Kollaborationswünschen: **[dein.email@beispiel.de]**
+Bei Fragen, Feedback oder Kollaborationswünschen: **[Mario_Diekmann@yahoo.de]**
 
 ---
 
-> Projekt von [Dein Name] – Erstellt mit Python, Flask, newspaper3k, wordcloud, NLTK und spaCy.
+> Projekt von [Mario Diekmann] – Erstellt mit Python, Flask, newspaper3k, wordcloud, NLTK und spaCy.

@@ -1,0 +1,49 @@
+Max Mustermann
+Musterstraße 12
+53115 Bonn
+Telefon: +49 123 456789
+E-Mail: max.mustermann@email.de
+LinkedIn: linkedin.com/in/maxmustermann
+GitHub: github.com/maxmustermann
+________________________________________
+Berufsziel / Kurzprofil
+Motivierter IT-Einsteiger mit Schwerpunkt auf Webentwicklung und Datenanalyse. Praktische Erfahrung in Python-basiertem Webscraping sowie Frontend- und Backend-Entwicklung mit React und Node.js. Auf der Suche nach einer Position, um technische Fähigkeiten weiter auszubauen und praktische Erfahrung zu sammeln.
+________________________________________
+Berufserfahrung
+Diekmann Immobilien, Bonn
+Innendienstlicher Mitarbeiter
+11/2018 – heute
+•	Erstellung von Exposés und Kundenakquise
+•	Recherche und Datenpflege
+•	EDV-gestützte Aufgaben und Prozessoptimierung
+Pflege eines schwerkranken Familienmitglieds
+10/2012 – 07/2014
+________________________________________
+Bildungsweg
+Bachelor of Science (B.Sc.) Informatik
+Rheinische Friedrich-Wilhelms-Universität Bonn
+10/2015 – 10/2019
+Abitur (Externenprüfung)
+Weiterbildungskolleg Köln-Kolleg
+09/2014 – 09/2015
+________________________________________
+IT-Kenntnisse
+•	Programmiersprachen: Python (gute Kenntnisse), JavaScript (React, Node.js)
+•	Webentwicklung: Frontend mit React, Backend mit Node.js, Datenbanken mit MongoDB
+•	Tools & Technologien: Git (Grundkenntnisse), REST-APIs, Webscraping mit BeautifulSoup
+•	Mathematische Problemlösungen: Erfahrung mit Project Euler für effiziente Algorithmen
+________________________________________
+IT-Projekte
+Linguistischer Zeitungs-Scraper (Python)
+•	Analyse und Vergleich der Online-Auftritte großer deutscher Tageszeitungen
+•	Automatisiertes Webscraping und Textverarbeitung
+Game of Life (React, Node.js, MongoDB)
+•	Entwicklung einer interaktiven Webanwendung des Zellautomaten
+•	Full-Stack-Implementierung mit Datenbankanbindung
+GitHub-Profil: github.com/maxmustermann
+(QR-Code mit GitHub-Link optional in der Word-Vorlage einfügen)
+________________________________________
+Sonstiges
+•	Bereitschaft zur Weiterbildung und schnelle Auffassungsgabe
+•	Teamorientierte und strukturierte Arbeitsweise
+
