@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:  # Manuell auslösbar über GitHub
   schedule:
-    - cron: '00 06 * * *'  # Täglich um 6:00 Uhr UTC (8:00 Uhr MESZ)
+    - cron: '05 07 * * *'  # 09:05 Uhr MESZ / 08:05 Uhr MEZ
 
 jobs:
   scrape:
@@ -39,14 +39,20 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push generated images if any change
+        id: commit_step
         run: |
-          git add static/images/
+          mkdir -p static/images
+          git add static/images/ || true
           if ! git diff --cached --quiet; then
             git commit -m "chore: update generated wordcloud images [skip ci]"
             git push
+            echo "changes=true" >> $GITHUB_OUTPUT
           else
             echo "No changes to commit"
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Trigger Render Deploy Hook
+        if: steps.commit_step.outputs.changes == 'true'
         run: |
           curl -X POST https://api.render.com/deploy/srv-d19if37gi27c73ct83fg?key=FJCiFHjK9kc
